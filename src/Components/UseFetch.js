@@ -13,6 +13,8 @@ function UseFetch(){
                 const data = await resp.json();
                 setData(data);
                 setLoading(false);
+                // erro
+                // r
             }
             catch(error){
                 setError(error);
