@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: aqua;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+}
+
+.left-items, .right-items{
+    flex-basis: 50%;
+}
+
+.card{
+    width: 230px;
+    background-color: rgb(75, 75, 214);
+    border-radius: 1rem;
+    box-shadow: 0px 5px 5px rgba(0,0,0.5);
+    display: flex;
+    padding: 0 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+}
+.card:hover{
+    opacity: 80%;
+}
+
+.left-items{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,0.5fr));
+    grid-gap: 10px;
+}
+
+.right-items{
+    width: 50%;
+    text-align: center;
+    color: Black;
+    position:fixed;
+    top:100px;
+    right:10px;
+}
+
+.right-items img{
+    margin: 2rem;
+    height: 170px;
+}
+
+.right-items h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.type{
+    width: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.type .group{
+    background-color: rgb(190, 209, 255);
+    border-radius: 5px;
+    padding:10px;
+}
+
+.btns-nextback{
+    display: flex;
+    margin-left: 200px;
+}
+
+.btns-nextback  :hover{
+    
+    opacity: 80%;
+}
+
+.btns-nextback button{
+    outline: solid;
+    border:none;
+    width: 100px;
+    padding: 1rem 0.5rem;
+    margin: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(29, 29, 29);
+    background-color: rgb(165, 214, 233);
+    border-radius: 3px;
+    cursor:pointer;
+}
+
+.types-font{
+    font-family: 'Times New Roman', Times, serif;
+}
